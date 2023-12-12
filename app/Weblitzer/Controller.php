@@ -44,11 +44,19 @@ class Controller
      * print_r coké
      * @param  mixed $var La variable a déboger
      */
-    protected function debug($var)
+    protected function dbug($var)
     {
         echo '<pre style="height:100px;overflow-y: scroll;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #000; color: #fff;">';
         print_r($var);
         echo '</pre>';
+    }
+
+    protected function dd($var)
+    {
+        echo '<pre style="height:100px;overflow-y: scroll;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #000; color: #fff;">';
+        print_r($var);
+        echo '</pre>';
+        die();
     }
 
     /**

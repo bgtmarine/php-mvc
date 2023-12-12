@@ -1,8 +1,16 @@
 <?php
 
-$routes = array(
-    array('home','default','index')
-);
+$routes = [
+  ['home','default','index'],
+  //route, controler et view
+  ['contact','contact','index'],
+  ['about','about','index'],
+
+
+
+
+];
+
 
 
 

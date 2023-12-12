@@ -1,0 +1,3 @@
+<?=$titrePage?>
+<?=$this->dd($persons)?>
+
