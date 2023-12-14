@@ -46,14 +46,14 @@ class Controller
      */
     protected function dbug($var)
     {
-        echo '<pre style="height:100px;overflow-y: scroll;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #000; color: #fff;">';
+        echo '<pre style="overflow-y: scroll;overflow: auto;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #fff; color: #000;">';
         print_r($var);
         echo '</pre>';
     }
 
     protected function dd($var)
     {
-        echo '<pre style="height:100px;overflow-y: scroll;font-size:.8em;padding: 10px; font-family: Consolas, Monospace; background-color: #000; color: #fff;">';
+        echo '<pre style="overflow-y: scroll;font-size:.8em;padding: 10px;overflow: auto;font-family: Consolas, Monospace; background-color: #fff; color: #000;">';
         print_r($var);
         echo '</pre>';
         die();
