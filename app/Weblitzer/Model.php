@@ -26,6 +26,11 @@ class Model
         return App::getDatabase()->query("SELECT * FROM ".self::getTable(),get_called_class());
     }
 
+    public static function allOrder($order = 'ASC',$columId = 'id')
+    {
+        return App::getDatabase()->query("SELECT * FROM " . self::getTable() . " ORDER BY ".$columId." ".$order,get_called_class(),true);
+    }
+
     public static function findById($id,$columId = 'id')
     {
         return App::getDatabase()->prepare("SELECT * FROM " . self::getTable() . " WHERE ".$columId." = ?",[$id],get_called_class(),true);
