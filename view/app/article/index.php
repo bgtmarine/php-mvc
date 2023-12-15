@@ -1,10 +1,15 @@
 
+<p>Actuellement il y a <strong><?=$nbArticles?></strong> article(s) dans blog.</p>
+
+
   <?php 
 //   $this->dbug($articles);
+
   foreach($articles as $article):
   ?>
- 
+
  <article>
+
 <h3> <a href="<?= $view->path('article',[$article->id]);?>"><?=$article->title?></a></h3>
 
 <p>
