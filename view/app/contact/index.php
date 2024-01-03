@@ -1,3 +1,3 @@
 <?=$titrePage?>
-<?=$this->dd($persons)?>
+<?=$this->dd($titreContact)?>
 
